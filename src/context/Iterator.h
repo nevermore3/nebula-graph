@@ -39,7 +39,6 @@ public:
         kDefault,
         kGetNeighbors,
         kSequential,
-        kJoin,
         kProp,
     };
 
@@ -101,10 +100,6 @@ public:
 
     bool isSequentialIter() const {
         return kind_ == Kind::kSequential;
-    }
-
-    bool isJoinIter() const {
-        return kind_ == Kind::kJoin;
     }
 
     bool isPropIter() const {
